@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+    vestacp:
+        build: .
+        restart: "always"
+        ports:
+            - "8083:8083"

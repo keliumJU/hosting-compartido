@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+    vestacp:
+        image: niiknow/vestacp 
+        restart: "always"
+        ports:
+            - "3322:22"
+            - "80:80"
+            - "443:443"
+            - "9088:8083"
+        volumes:
+            - /opt/vestacp/vesta:/vesta
+            - /opt/vestacp/home:/home
+            - /opt/vestacp/backup:/backup \
