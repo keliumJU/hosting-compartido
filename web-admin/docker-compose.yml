@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+    webadmin:
+        build: .
+        restart: "always"
+        ports:
+            - "10000:10000"
+            - "80:80" 
